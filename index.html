@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 12:50 -->
+<!-- 23:05 -->
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
 <body>
     <header id="header">
         <a href="#" class="logo">Ramadan</a>
+        <div class="toggle"></div>
         <ul class="navigation">
             <li><a href="3" class="active">Home</a></li>
             <li><a href="#">About</a></li>
@@ -23,6 +24,7 @@
 
     <section>
         <img src="img/stars.png" id="stars">
+        <img src="img/stars2.png" id="stars2">
         <img src="img/moon.png" id="moon">
         <h2 id="text">Ramadan Mubarak</h2>
         <img src="img/rock.png" id="rock">
@@ -30,6 +32,27 @@
         <img src="img/bottom.png" id="bottom">
         <img src="img/lamp.png" id="lamp">
     </section>
+
+    <div class="sec">
+        <h2>Happy ramadan</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora eaque rem impedit. Incidunt soluta,
+            fugit magnam culpa vero exercitationem illo est numquam suscipit voluptate quasi possimus et ratione optio!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam facere architecto modi quasi doloribus
+            labore optio perferendis aut rerum maxime deleniti, veritatis nulla temporibus obcaecati. Provident expedita
+            alias cum eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorum enim quod modi vitae
+            porro ipsa. Incidunt eum consequuntur numquam. Quis rerum possimus illo vero, earum exercitationem in maxime
+            quasi?
+        </p>
+    </div>
+
+    <script>
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function () {
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>

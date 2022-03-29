@@ -15,7 +15,7 @@
         <a href="#" class="logo">Ramadan</a>
         <div class="toggle"></div>
         <ul class="navigation">
-            <li><a href="3" class="active">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Schedule</a></li>
             <li><a href="#">Contact</a></li>
@@ -41,11 +41,61 @@
             labore optio perferendis aut rerum maxime deleniti, veritatis nulla temporibus obcaecati. Provident expedita
             alias cum eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorum enim quod modi vitae
             porro ipsa. Incidunt eum consequuntur numquam. Quis rerum possimus illo vero, earum exercitationem in maxime
-            quasi?
+            quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident blanditiis est sapiente porro
+            quia, delectus ipsa id ea minima numquam iure perspiciatis voluptatem eveniet odit temporibus dolores,
+            perferendis inventore aliquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ducimus
+            dolores, deserunt ullam omnis earum a sint facere minus officia cum amet, nulla consequatur ab consectetur
+            debitis nemo quas error. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora eaque rem
+            impedit. Incidunt soluta,
+            fugit magnam culpa vero exercitationem illo est numquam suscipit voluptate quasi possimus et ratione optio!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam facere architecto modi quasi doloribus
+            labore optio perferendis aut rerum maxime deleniti, veritatis nulla temporibus obcaecati. Provident expedita
+            alias cum eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorum enim quod modi vitae
+            porro ipsa. Incidunt eum consequuntur numquam. Quis rerum possimus illo vero, earum exercitationem in maxime
+            quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident blanditiis est sapiente porro
+            quia, delectus ipsa id ea minima numquam iure perspiciatis voluptatem eveniet odit temporibus dolores,
+            perferendis inventore aliquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ducimus
+            dolores, deserunt ullam omnis earum a sint facere minus officia cum amet, nulla consequatur ab consectetur
+            debitis nemo quas error. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora eaque rem
+            impedit. Incidunt soluta,
+            fugit magnam culpa vero exercitationem illo est numquam suscipit voluptate quasi possimus et ratione optio!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam facere architecto modi quasi doloribus
+            labore optio perferendis aut rerum maxime deleniti, veritatis nulla temporibus obcaecati. Provident expedita
+            alias cum eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorum enim quod modi vitae
+            porro ipsa. Incidunt eum consequuntur numquam. Quis rerum possimus illo vero, earum exercitationem in maxime
+            quasi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident blanditiis est sapiente porro
+            quia, delectus ipsa id ea minima numquam iure perspiciatis voluptatem eveniet odit temporibus dolores,
+            perferendis inventore aliquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ducimus
+            dolores, deserunt ullam omnis earum a sint facere minus officia cum amet, nulla consequatur ab consectetur
+            debitis nemo quas error.
         </p>
     </div>
 
     <script>
+
+        let stars = document.getElementById('stars');
+        let stars2 = document.getElementById('stars2');
+        let moon = document.getElementById('moon');
+        let rock = document.getElementById('rock');
+        let masjid = document.getElementById('masjid');
+        let text = document.getElementById('text');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.bottom = value * 0.05 + '%';
+            stars2.style.bottom = value * 0.025 + '%';
+            moon.style.bottom = value * -0.5 + 'px';
+            rock.style.bottom = value * -0.75 + 'px';
+            masjid.style.bottom = value * -0.15 + 'px';
+
+            text.style.right = -50 + value * 0.6 + '%';
+            text.style.top = 50 + value * 0.1 + '%';
+
+            header.style.top = value * 0.5 + 'px';
+        })
+
+
         const toggleMenu = document.querySelector('.toggle');
         const navigation = document.querySelector('.navigation');
         toggleMenu.onclick = function () {

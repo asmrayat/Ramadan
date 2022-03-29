@@ -171,10 +171,13 @@ section img#starts2
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
-        z-index: 1000;
+        z-index: 10000;
     }
     .toggle.active
     {
+        position: fixed;
+        top: 20px;
+        right: 20px;
         background: url(/img/close.png);
         background-size: 25px;
         background-position: center;
@@ -199,4 +202,9 @@ section img#starts2
     {
         transform: translateY(-5px);
     }
+    #text
+    {
+        font-size: 15vw;
+    }
+
 }
